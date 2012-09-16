@@ -12,7 +12,10 @@ namespace CSharpInDepth
             List<Product> productsSortedByName = Product.GetSampleProducts();
             List<Product> productsSortedByPrice = Product.GetSampleProducts();
 
-            productsSortedByName.Sort(new ProductNameComparer());
+            productsSortedByName.Sort(delegate(Product x, Product y)
+            { return x.Name.CompareTo(y.Name); }
+            );
+
             productsSortedByPrice.Sort(new ProductPriceComparer());
 
             Console.WriteLine("Products sorted by name: ");
