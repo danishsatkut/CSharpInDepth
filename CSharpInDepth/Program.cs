@@ -9,6 +9,9 @@ namespace CSharpInDepth
     {
         static void Main(string[] args)
         {
+            List<Product> products = Product.GetSampleProducts();
+            foreach (Product product in products)
+                Console.WriteLine(product.ToString());
         }
     }
 }
