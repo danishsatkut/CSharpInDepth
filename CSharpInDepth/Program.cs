@@ -27,11 +27,10 @@ namespace CSharpInDepth
 
             Console.WriteLine("\nProducts with price greater than 25: ");
 
-            Predicate<Product> test = delegate(Product p) { return p.Price > 25m; };
-            List<Product> matches = products.FindAll(test);
-
-            Action<Product> print = delegate(Product p) { Console.WriteLine(p); };
-            ((List<Product>) matches.OrderBy(p => p.Name)).ForEach(print);
+            foreach (Product product in products.Where(p => p.Price > 25m))
+            {
+                Console.WriteLine(product);
+            }
 
             #endregion
         }
