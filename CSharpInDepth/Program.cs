@@ -16,7 +16,10 @@ namespace CSharpInDepth
             { return x.Name.CompareTo(y.Name); }
             );
 
-            productsSortedByPrice.Sort(new ProductPriceComparer());
+            productsSortedByPrice.Sort((x, y) =>
+            {
+                return x.Price.CompareTo(y.Price);
+            });
 
             Console.WriteLine("Products sorted by name: ");
             foreach (Product product in productsSortedByName)
