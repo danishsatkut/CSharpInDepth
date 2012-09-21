@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpInDepth", "CSharpInDepth\CSharpInDepth.csproj", "{D75F1A93-F849-4D4E-BDCA-924FE5AC689A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnderstandingDelegates", "UnderstandingDelegates\UnderstandingDelegates.csproj", "{7299A4B6-2802-48E7-A754-46B300C95CE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +15,10 @@ Global
 		{D75F1A93-F849-4D4E-BDCA-924FE5AC689A}.Debug|x86.Build.0 = Debug|x86
 		{D75F1A93-F849-4D4E-BDCA-924FE5AC689A}.Release|x86.ActiveCfg = Release|x86
 		{D75F1A93-F849-4D4E-BDCA-924FE5AC689A}.Release|x86.Build.0 = Release|x86
+		{7299A4B6-2802-48E7-A754-46B300C95CE2}.Debug|x86.ActiveCfg = Debug|x86
+		{7299A4B6-2802-48E7-A754-46B300C95CE2}.Debug|x86.Build.0 = Debug|x86
+		{7299A4B6-2802-48E7-A754-46B300C95CE2}.Release|x86.ActiveCfg = Release|x86
+		{7299A4B6-2802-48E7-A754-46B300C95CE2}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
